@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(100, 20);
+  background(0, 20);
   for (var i = 0; i < bars.length; i++) {
     bars[i].display();
     bars[i].rain();
