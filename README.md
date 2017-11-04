@@ -1,4 +1,4 @@
 # greyScaleRain
-grey scale rain
+[grey scale rain](https://kerianvaraine.github.io/greyScaleRain/)
 
-kerianvaraine.github.io/greyscalerain/
+
