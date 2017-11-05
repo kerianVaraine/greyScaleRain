@@ -1,8 +1,13 @@
+'esversion: 6';
 var bars = [];
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  for (var i = 0; i < 150; i++) {
+  let cnv = createCanvas(windowWidth, windowHeight);
+  let cnvX = (windowWidth - width) / 2;
+  let cnvY = (windowHeight - height) / 2;
+  cnv.position(cnvX, cnvY);
+
+  for (var i = 0; i < round(windowWidth / 10); i++) {
     bars[i] = new Bar();
   }
 }
@@ -10,6 +15,7 @@ function setup() {
 //  function sets how many bars to draw  //
 function draw() {
   background(0, 20);
+
   for (var i = 0; i < bars.length; i++) {
     bars[i].display();
     bars[i].rain();
