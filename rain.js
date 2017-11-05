@@ -1,10 +1,10 @@
-'esversion: 6';
+/*jshint esversion: 6 */
 var bars = [];
 
 function setup() {
-  let cnv = createCanvas(windowWidth, windowHeight);
-  let cnvX = (windowWidth - width) / 2;
-  let cnvY = (windowHeight - height) / 2;
+  const cnv = createCanvas(windowWidth, windowHeight);
+  const cnvX = (windowWidth - width) / 2;
+  const cnvY = (windowHeight - height) / 2;
   cnv.position(cnvX, cnvY);
 
   for (var i = 0; i < round(windowWidth / 10); i++) {
@@ -24,10 +24,10 @@ function draw() {
 
 //  creating Bar function to call //
 function Bar() {
-  this.height = round(random(10, 300));
-  this.x = round(random(0, windowWidth));
-  this.y = round(random(-20, -500)) - this.height;
-  this.width = 5;
+  this.height = round(random(10, 300)); //height of rain drop//
+  this.x = round(random(0, windowWidth)); //x position of rain drop//
+  this.y = round(random(-20, -500)) - this.height;  //sets drops above canvas//
+  this.width = 5; //width
   this.col = color(round(random(25, 200)));
   this.speed = round(random(5, 10));
 
